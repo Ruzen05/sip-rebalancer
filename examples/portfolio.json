@@ -1,0 +1,9 @@
+{
+  "monthly_sip": 30000,
+  "drift_threshold_pp": 5,
+  "funds": [
+    { "name": "Nifty 50",         "target_pct": 50, "current_value": 420000 },
+    { "name": "Nifty Next 50",    "target_pct": 20, "current_value": 130000 },
+    { "name": "Nifty Midcap 150", "target_pct": 30, "current_value": 350000 }
+  ]
+}
