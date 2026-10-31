@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sip-rebalancer"
+version = "0.1.0"
+description = "Work out the monthly SIP split and step-up needed to hold a target index allocation (Nifty 50 / Next 50 / Midcap 150)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ruzen" }]
+keywords = ["sip", "rebalancing", "index-funds", "nifty", "portfolio", "india"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+sip-rebalance = "sip_rebalancer.cli:main"
+
+[tool.setuptools]
+packages = ["sip_rebalancer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
